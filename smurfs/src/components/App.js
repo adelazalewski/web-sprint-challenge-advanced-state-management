@@ -1,13 +1,20 @@
 import React, { Component } from "react";
+import Form from "./form.js";
 import "./App.css";
+import SmurfList from "./smurfList";
+import Footer from "./footer";
+
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
-        <h1>SMURFS! W/Redux</h1>
-        <div>Welcome to your state management version of Smurfs!</div>
-        <div>Start inside of your `src/index.js` file!</div>
-        <div>Have fun!</div>
+        <header>
+          <h1>Smurfs Village no.112354</h1>
+        </header>
+        <Form />
+        <SmurfList />
+        <Footer />
       </div>
     );
   }
